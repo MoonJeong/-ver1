@@ -1,14 +1,23 @@
-# -신호등 알고리즘
+# 신호등 알고리즘
+
 #include <wiringPi.h>
+
 #include <stdio.h>
+
 #define CAR_RED 0
+
 #define CAR_YELLOW 2
+
 #define CAR_GREEN 3
+
 #define PERSON_RED 21 
+
 #define PERSON_GREEN 22
 
 
+
 int main(void) {
+
 	if (wiringPiSetup() == -1) {
 		printf("setup wiringPi failed!");
 		return 1;
@@ -76,4 +85,5 @@ int main(void) {
 
  }
  return 0;
+ 
  }
