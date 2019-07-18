@@ -1,4 +1,4 @@
-# -ver1
+# -신호등 알고리즘
 오류X 코드정리전
 
 #include <wiringPi.h>
