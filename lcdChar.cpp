@@ -56,7 +56,7 @@ void LcdEnd(int lcd, char start, char line, char *message){
 int main(void){
    if(wiringPiSetup()==-1){return 1;}
    int lcd=lcdInit(2,16,4,rs,en,d4,d5,d6,d7,0,0,0,0);
-   for(;;)
+   for(;;) //무한루프 밑에 블록 계속 
    {
    StaticMessage(lcd,0,0,"Hello World!");
    StaticMessage(lcd,0,1,"Connected!");
